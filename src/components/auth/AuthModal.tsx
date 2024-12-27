@@ -1,10 +1,10 @@
-import React from 'react';
-import { X, Mail, Lock, Github } from 'lucide-react';
+import React from "react";
+import { X, Mail, Lock, Github } from "lucide-react";
 
 type AuthModalProps = {
   isOpen: boolean;
   onClose: () => void;
-  mode: 'login' | 'signup';
+  mode: "login" | "signup";
 };
 
 export function AuthModal({ isOpen, onClose, mode }: AuthModalProps) {
@@ -16,14 +16,18 @@ export function AuthModal({ isOpen, onClose, mode }: AuthModalProps) {
         <button onClick={onClose} className="absolute right-4 top-4">
           <X className="h-6 w-6 text-gray-400" />
         </button>
-        
+
         <h2 className="text-2xl font-bold text-center mb-6">
-          {mode === 'login' ? 'Welcome Back' : 'Create Account'}
+          {mode === "login" ? "Welcome Back" : "Create Account"}
         </h2>
 
         <div className="space-y-4">
           <button className="w-full flex items-center justify-center gap-2 bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600">
-            <img src="https://www.google.com/favicon.ico" alt="Google" className="w-5 h-5" />
+            <img
+              src="https://www.google.com/favicon.ico"
+              alt="Google"
+              className="w-5 h-5"
+            />
             Continue with Google
           </button>
 
@@ -32,13 +36,17 @@ export function AuthModal({ isOpen, onClose, mode }: AuthModalProps) {
               <div className="w-full border-t border-gray-300"></div>
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="px-2 bg-white text-gray-500">Or continue with</span>
+              <span className="px-2 bg-white text-gray-500">
+                Or continue with
+              </span>
             </div>
           </div>
 
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700">Email</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Email
+              </label>
               <div className="mt-1 relative">
                 <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                 <input
@@ -48,9 +56,11 @@ export function AuthModal({ isOpen, onClose, mode }: AuthModalProps) {
                 />
               </div>
             </div>
-            
+
             <div>
-              <label className="block text-sm font-medium text-gray-700">Password</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Password
+              </label>
               <div className="mt-1 relative">
                 <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                 <input
@@ -62,7 +72,7 @@ export function AuthModal({ isOpen, onClose, mode }: AuthModalProps) {
             </div>
 
             <button className="w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700">
-              {mode === 'login' ? 'Sign In' : 'Create Account'}
+              {mode === "login" ? "Sign In" : "Create Account"}
             </button>
           </div>
         </div>
