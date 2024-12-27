@@ -32,7 +32,7 @@ export function FeaturedJobs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900">Featured Opportunities</h2>
-          <p className="mt-4 text-xl text-gray-600">Discover top projects matched to your skills</p>
+          <p className="mt-4 text-xl text-gray-600">Discover top projects matched to your skill set</p>
         </div>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
