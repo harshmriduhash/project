@@ -24,17 +24,6 @@ const jobs = [
     skills: ["React", "TypeScript", "Tailwind"],
     postedAt: "5 hours ago"
   },
-  {
-    id: 3,
-    title: "AI Engineer",
-    company: "Future Systems",
-    location: "Hybrid",
-    salary: "$100-150k",
-    type: "Full-time",
-    description: "Help us build the next generation of AI-powered developer tools...",
-    skills: ["Python", "TensorFlow", "NLP"],
-    postedAt: "1 day ago"
-  }
 ];
 
 export function FeaturedJobs() {
